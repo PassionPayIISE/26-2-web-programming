@@ -54,7 +54,7 @@ const MAX_LEVEL = "99";
 //04. 자료형 
 //원시 타입
 let number = 1; //숫자형(bumber)
-let str = "abc"; //문자열형(string)
+let str0 = "abc"; //문자열형(string)
 let bool = true; // 또는 false, 논리형(boolean)
 let undi = undefined; // undefined 
 let nul = null; //null(object)
@@ -91,8 +91,8 @@ console.log(sum);
 
 
 //06. 문자열형
-let str = "I'm fine thank you!";
-console.log(str)
+let str1 = "I'm fine thank you!";
+console.log(str1)
 
 let str2 = 'I"m fine thank you';
 console.log(str2)
@@ -107,8 +107,8 @@ console.log(str3)
 let num;
 console.log(num)
 // num -> undefined로 출력됨
-let null = null;
-console.log(num);
+let nulle = null;
+console.log(nulle);
 //사용자가 의도적으로 메모리공간, 변수 값이 들어가야 하는 데이터 공간을 비워두기 위해 사용하는 값임 
 
 
@@ -145,17 +145,28 @@ let student1={//객체의 key는 문자의 형태로 작성해도 되고, 바로
     koreanscore:90,
     english : 70,
     math : 80,
-    science : 60 
+    science : 60 ,
     "music score":50
     }; //세미콜론 꼭 찍어야 함! 
 
 console.log(student1["koreanscore"]); //대괄호 인덱스에서는 문자열로 작성해야 함. 
 console.log(student1.english); //점 연산자에는 문자열로 작성하면 안됨. 
-console.log(student1["music score"]);
+console.log(student1['music score']);
 
 
 
 //11. function() {};
-let function(a,b){
-    out = a + b
-}
+//함수 실행 = '함수를 호출한다' 라고 함. 
+const gugudan = function add() { //중복 선언이 불가능하도록 const 를 사용하여 함수 선언함. 
+    console.log("3 * 1 = 3");
+    console.log("3 * 2 = 6");
+    console.log("3 * 3 = 9");
+    console.log("3 * 4 = 12");
+    console.log("3 * 5 = 15");  
+};  //세미콜론 안 찍어도 작동하기는 하는데, 일관된 코드를 위해서 얘도 찍어줘야 함. 
+
+gugudan(); //add(); (x)
+/*
+함수 표현식은 변수의 이름으로만 호출할 수 있음. -> 변수 gugudan (o)
+함수 선언에서 선언하는 함수의 이름으로 호출할 수 없음 -> 함수의 이름 add (x)
+*/
