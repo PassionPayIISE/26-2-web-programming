@@ -1,4 +1,4 @@
-# 11
+// 11
 // 1. 기본 함수 선언 및 호출 예시
 function printHello() {
     console.log("hello");
@@ -24,7 +24,7 @@ const gugudan = function printGugudan() {
 
 gugudan(); // 변수명으로 함수 호출
 
-# 12
+// 12
 // 1. 매개변수(name)를 받는 함수 선언
 function printFruit(name) {
     console.log(name);
@@ -53,7 +53,7 @@ function printObject(obj) {
 }
 printObject({ name: "apple", price: 1000 });
 
-# 13
+// 13
 // 두 숫자를 더해 결과값을 반환하는 함수 선언
 function sum(num1, num2) {
     return num1 + num2; // 호출한 쪽으로 결과 반환
@@ -82,7 +82,7 @@ function checkReturn() {
 
 checkReturn();
 
-# 15
+// 15
 // [기존 방식] 일반 함수 선언
 function sum(num1, num2) {
     return num1 + num2;
@@ -130,7 +130,7 @@ const outerFuncArrow = () => () => "nested";
 
 console.log(outerFuncArrow()()); // "nested" 출력
 
-# 16
+// 16
 // 1. 덧셈 연산자 (+)
 const addition = 20 + 10;
 console.log(addition); // [00:03:34] 30 출력
@@ -163,7 +163,7 @@ console.log("20" - 10); // [00:06:07] 10 출력 (숫자)
 console.log("20" * 2);  // 40 출력 (숫자)
 console.log("20" / 2);  // 10 출력 (숫자)
 
-# 17
+// 17
 // [기존 방식] 따옴표와 + 연산자를 이용한 문자열 결합
 const name = "홍길동";
 const age = 20;
@@ -188,7 +188,7 @@ const multiLineText = `
 `;
 console.log(multiLineText);
 
-# 18
+// 18
 // 1. 동등 연산자 (==)
 console.log(10 == 10);   // [00:02:07] true (숫자 10과 숫자 10은 같음)
 console.log(10 == "10"); // [00:07:48] true (문자열 "10"이 숫자로 자동 변환되어 비교됨)
@@ -213,7 +213,7 @@ console.log(10 < 20);  // [00:05:48] true (10은 20보다 작음)
 console.log(20 >= 20); // [00:05:23] true (크지는 않지만 같으므로 참)
 console.log(10 <= 20); // [00:06:01] true (작으므로 참)
 
-# 19
+// 19
 // 나이가 20 이상인지 확인하는 기본 if문 예시
 const age = 20;
 
@@ -246,7 +246,7 @@ if (score >= 90) {
     console.log("F 등급입니다.");
 }
 
-# 20 
+// 20 
 let flag = false;
 do {
     console.log('do-while');
